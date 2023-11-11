@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+/* Zerando o css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* FundaTela */
+
+html {
+    width: 100vw;
+    min-height: 100vh; /* Defina uma altura mínima */
+    font-size: 62.5%;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    overflow-x: hidden; /* Impede a rolagem horizontal */
+    overflow-y: hidden; /* Impede a rolagem vertical */
+}
+
+body {
+    background: linear-gradient(rgba(17, 17, 17, 0.8), rgba(20, 20, 20, 1)), url(/img/img2.0);
+    background-position: center center;
+    background-size: cover;
+    min-height: 100vh; /* Defina uma altura mínima */
+    overflow-x: hidden; /* Impede a rolagem horizontal */
+    overflow-y: hidden; /* Impede a rolagem vertical */
+}
+
+
+/* Menu - Header - Navbar */
+
+header {
+    width: 100%;
+    height: 7vh;
+    background: rgba(22, 22, 22, 0.2);
+}
+
+.menu-content {
+    text-transform: uppercase;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.8rem;
+}
+
+.logo {
+    font-size: 1.8rem;
+    letter-spacing: 0.4rem;
+    cursor: pointer;
+}
+
+.menu-content .list-itens {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+
+.menu-content .list-itens a {
+    text-decoration: none;
+    color: white;
+    padding: 1.5rem;
+    transform: 2ms ease-in;
+    position: relative;
+}
+
+.menu-content .list-itens a:before {
+    content: ' ';
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 0px;
+    height: 1px;
+    background-color: rgba(251, 255, 0);
+    transition: all 1.5s ease;
+}
+
+.menu-content .list-itens a:hover:before {
+    width: 100%;
+}
+
+/* Centro - Conteúdo principal */
+
+main {
+    height: 93vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Textos - Conteúdo principal*/
+
+.primary-text {
+    width: 850px;
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.second-text {
+    margin-bottom: 7rem;
+    font-size: 2rem;
+    color: rgba(165, 165, 165);
+    text-transform: uppercase;
+}
+
+/*Botões*/
+
+.btns {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btns button {
+    width: 250px;
+    height: 60px;
+    cursor: pointer;
+    border: 1px solid white;
+    color: white;
+    text-transform: uppercase;
+    background-color: transparent;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    border-radius: 20px;
+    position: relative;
+    transition: 1.5s;
+}
+
+.btns button:hover {
+    color: rgba(251, 255, 0);
+    border: none;
+}
+
+.btns button:before {
+    content: ' ';
+    border-radius: 20px;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 0;
+    height: 60px;
+    background-color: rgba(61, 61, 61);
+    z-index: -1;
+    transition: 1s;
+}
+
+.btns button:hover:before {
+    width: 100%;
+}
+
+/* Estilos para telas pequenas (dispositivos móveis) */
+@media screen and (max-width: 768px) {
+    body {
+        background: linear-gradient(rgba(17, 17, 17, 0.8), rgba(20, 20, 20, 1)), url(/img/img2.0);
+        background-attachment: fixed;
+        background-position: center top;
+    }
+
+    header {
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .menu-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    .menu-content .list-itens {
+        flex-direction: column;
+    }
+
+    .menu-content .list-itens a {
+        padding: 10px;
+    }
+
+    .main-content {
+        padding: 10px;
+    }
+
+    .primary-text {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    .second-text {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .btns {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btns button {
+        width: 100%;
+    }
+}
+
+/* Estilos para telas médias (tablets) - Você pode ajustar conforme necessário */
+@media screen and (max-width: 1024px) {
+    .primary-text {
+        font-size: 4rem;
+    }
+
+    .second-text {
+        font-size: 1.8rem;
+    }
+}
