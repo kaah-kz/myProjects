@@ -1,0 +1,57 @@
+body {
+    background-color: #000; /* Cor de fundo preto em hexadecimal. */
+    color: #fff; /* Cor do texto branca para contraste. */
+}
+
+h1 {
+    color: #e0589c; /* Cor do título h1. */
+}
+
+.cor {
+    background-color: #cc02ae; /* Cor de fundo para elementos com a classe "cor". */
+}
+
+#carouselExampleControls {
+    width: 50%;
+    padding-right: 60px; /* Use valores positivos para preenchimento à direita. */
+}
+
+.navbar {
+    background-color: #e0589c; /* Cor de fundo da barra de navegação. */
+    font-weight: bold;
+}
+
+/* Estilizar a barra de pesquisa (input) em negrito */
+.navbar form .form-control {
+    font-weight: bold;
+    color:#000;
+}
+
+button {
+    color: #000;
+    background-color: #e0589c;
+}
+
+
+
+/* body{
+    background-color: #0000;
+    color: #fff;
+}
+
+h1{
+    color: #e0589c;
+};
+
+.cor{
+    background-color: #cc02ae;
+}
+
+#carouselExampleControls{
+    width: 50%;
+    padding-right: -60%;
+}
+
+.navbar{
+    background-color: #e0589c;
+}; */
