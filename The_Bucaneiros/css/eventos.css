@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+    transition: 0,3s;
+}
+
+a:hover {
+    opacity: 0,7;
+}
+
+.logo{
+    font-size: 24px;
+    text-decoration: uppercase;
+    letter-spacing: 4px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: #2b0000;
+    height: 8vh;
+}
+
+main{
+    background: url(".") no-repeat center center;
+    background-size: cover;
+    height: 92vh;
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+
+}
+
+.menu li{
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+body{
+    background-color: #420101;
+}
+
+#imgLogo{
+    margin-top: 180px;
+    width: 250px;
+    
+}
+.mobileMenu{
+    display:none;
+    cursor: pointer;
+}
+
+.mobileMenu div{
+    width: 32px;
+    height: 2px;
+    background-color: #fff;
+    margin: 8px;
+}
+
+@media (max-width: 999px){
+    body{
+        overflow: hidden;
+    }
+    .menu{
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        background: #2b0000;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+    }
+
+    .menu li {
+        margin-left: 0;
+        opacity: 0;
+    }
+
+    .mobileMenu{
+        display: block;
+    }
+}
+
+.menu.active{
+    transform: translateX(0);
+}
+
+#imgLogo1{
+    width: 340px;
+}
+
+section#hero{
+    height: calc(30vh - 60px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+#hero h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    
+}
+
+#qrCode{
+    width: 50%;
+    border-radius: 8%;
+}
+
+#rioJaneiroImg{
+    width: 50%;
+    margin-top: 3%;
+    border-radius: 2%;
+    margin-left: 20px;
+    border: solid 3px black;
+    display: flex;
+}
+
+h2{
+    margin-left: 64%;
+    margin-top: -400px;
+    color:#fff;
+    display: flex;
+}
+
+#rio{
+    margin-top: 8%;
+    margin-left: 54%;
+    color:#c6bfbf;
+    display: flex;
+}
+
+h3{
+    color:#c6bfbf;
+}
+
+#rioThe{
+    background-color: #420101;
+}
