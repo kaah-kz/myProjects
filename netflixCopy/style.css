@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    overflow: hidden;
+}
+
+.nav-logo {
+    width: 180px;
+    object-fit: contain;
+    margin-left: 140px;
+    margin-top: -30px;
+}
+
+.idioma-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.idioma-select {
+    margin-left: 790px;
+    height: 34px;
+    background-color: rgba(40, 38, 38, 0.7);
+    color: white;
+    border: 1px solid white;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.entrar {
+    border: 0px;
+    background-color: rgb(211, 0, 0);
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    width: 70px;
+    height: 34px;
+    cursor: pointer;
+    margin-right: 170px;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    z-index: 1;
+}
+
+.banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./img/fundo.jpg);
+    background-size: 130%;
+    background-position: center center;
+    color: white;
+    object-fit: contain;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.banner-contents {
+    padding: 20px;
+}
+
+.banner-title {
+    font-size: 55px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    padding: 15px;
+}
+
+.banner-subtitle {
+    font-size: 150%;
+    font-weight: normal;
+    padding: 5px;
+}
+
+.banner-email {
+    font-size: 130%;
+    font-weight: normal;
+    padding: 20px;
+}
+
+.btn-go {
+    background-color: rgba(211, 0, 0);
+    color: white;
+    width: 180px;
+    height: 55px;
+    font-size: 1.5em;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 0px;
+    padding-bottom: 5px;
+}
+
+.input {
+    background-color: rgba(40, 38, 38, 0.7);
+    width: 420px;
+    height: 50px;
+    border-radius: 4px;
+    border: solid white 1px;
+    opacity: 0.9;
+    padding-left: 15px;
+    font-size: 18px;
+    font-weight: bold white;
+    margin-right: 5px;
+}
